@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body div.choose {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, #0fe677 0%, #00d4ff 100%);
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+body div.choose h1 {
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 5vw;
+  transform: translate(-50%, -50%);
+}
+
+body div.choose form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+body div.choose form div {
+  position: relative;
+  width: 40vw;
+  max-width: 400px;
+  height: 4vh;
+  margin-bottom: 50px;
+}
+
+body div.choose form div input {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px white solid;
+  color: white;
+  padding: 5px 10px;
+  font-size: 2vw;
+}
+
+body div.choose form div input:empty + div.placeholder,
+body div.choose form div input:invalid + div.placeholder {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 300ms ease;
+  color: white;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+body div.choose form div input:empty + div.placeholder i,
+body div.choose form div input:empty + div.placeholder img,
+body div.choose form div input:empty + div.placeholder span.legend,
+body div.choose form div input:invalid + div.placeholder i,
+body div.choose form div input:invalid + div.placeholder img,
+body div.choose form div input:invalid + div.placeholder span.legend {
+  font-size: 2vw;
+  line-height: 2vw;
+  width: 2vw;
+  margin: 0vw .7vw;
+  transition: all 300ms ease;
+}
+
+body div.choose form div input:empty + div.placeholder span.legend,
+body div.choose form div input:invalid + div.placeholder span.legend {
+  text-transform: uppercase;
+}
+
+body div.choose form div input:empty + div.placeholder span.placeholder,
+body div.choose form div input:invalid + div.placeholder span.placeholder {
+  font-size: 2vw;
+  line-height: 2vw;
+  transition: all 300ms ease;
+}
+
+body div.choose form div input:focus + div.placeholder,
+body div.choose form div input:valid + div.placeholder {
+  transform: translateY(-175%);
+  transition: transform 300ms ease;
+}
+
+body div.choose form div input:focus + div.placeholder .placeholder,
+body div.choose form div input:valid + div.placeholder .placeholder {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  transition: all 300ms ease;
+}
+
+body div.choose form div input:focus + div.placeholder i,
+body div.choose form div input:focus + div.placeholder img,
+body div.choose form div input:focus + div.placeholder span.legend,
+body div.choose form div input:valid + div.placeholder i,
+body div.choose form div input:valid + div.placeholder img,
+body div.choose form div input:valid + div.placeholder span.legend {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  width: 1.5vw;
+  margin: 0vw .4vw 0 0;
+  transition: all 300ms ease;
+}
+
+body div.choose form button {
+  z-index: 10;
+  pointer-events: all;
+  cursor: pointer;
+  width: 40vw;
+  max-width: 400px;
+  height: 4vh;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100000px;
+  color: white;
+  font-size: 2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}

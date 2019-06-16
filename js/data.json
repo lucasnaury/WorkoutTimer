@@ -1,0 +1,31 @@
+{
+	"timers": [{
+			"totalTime": "0:03",
+			"restTime": "0:04",
+			"nbRepeats": "1",
+			"colors": {
+				"bottom": [15,230,119],
+				"top": [0,212,255]
+			},
+			"state": "active"
+		},
+		{
+			"totalTime": "0:12",
+			"restTime": "0:05",
+			"nbRepeats": "3",
+			"colors": {
+				"bottom": [15,230,119],
+				"top": [0,212,255]
+			}
+		},
+		{
+			"totalTime": "0:55",
+			"restTime": "3:20",
+			"nbRepeats": "3",
+			"active": "true",
+			"colors": {
+				"bottom": [255,0,0],
+				"top": [255,166,61]
+			}
+		}]
+}

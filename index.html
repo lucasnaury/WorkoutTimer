@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Ceci permet de définir le titre de la page  -->
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/choose.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <link href="/node_modules/pickerjs/dist/picker.css" rel="stylesheet">
+    <script src="/node_modules/pickerjs/dist/picker.js"></script>
+  </head>
+  <body>
+    <div class="choose">
+      <h1>Settings</h1>
+      <form id="form">
+        <div>
+          <input type="text" class="PracticeTimeInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <i class='material-icons-round'>history</i>
+            <span class="placeholder">Practice Time</span>
+          </div>
+        </div>
+        <div>
+          <input type="text" class="RestTimeInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <img class='background-countdown' src="img/PracticeTime.png">
+            <span class="placeholder">Rest Time</span>
+          </div>
+        </div>
+        <div>
+          <input type="text" class="nbRepeatsInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <span class="legend">x</span>
+            <span class="placeholder">Number of Repeats</span>
+          </div>
+        </div>
+        <button id="submitBtn" type="reset" name="button">Start</button>
+      </form>
+    </div>
+      <div class='section'>
+            <div class='container'>
+              <div class='restTime'><i class='material-icons-round'>history</i><span>0:30</span></div>
+              <div class='countdown'><img src="img/PracticeTime.png"><span>1:00</span></div>
+              <div class='nbRepeats'>10</div>
+              <div class="background">
+                <i class='material-icons-round background-rest'>history</i>
+                <img class='background-countdown' src="img/PracticeTime.png">
+              </div>
+              <div class="svgContainer">
+                <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                  <circle cx="250" cy="250" r="251" stroke="white" stroke-width="4px" stroke-linecap="round" stroke-dasharray="250px" stroke-dashoffset="0"/>
+                </svg>
+              </div>
+            </div>
+            <div class='parameters'>
+              <span class='legend'>Practice Time</span>
+              <i class='material-icons-round playPauseBtn'>play_arrow</i>
+              <i class='material-icons-round editBtn'>edit</i>
+            </div>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Ceci permet de définir le titre de la page  -->
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="css/choose.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/choose.js"></script>
+
+    <link href="/node_modules/pickerjs/dist/picker.css" rel="stylesheet">
+    <script src="/node_modules/pickerjs/dist/picker.js"></script>
+  </head>
+  <body>
+    <div class="choose">
+      <h1>Settings</h1>
+      <form id="form">
+        <div>
+          <input type="text" class="PracticeTimeInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <i class='material-icons-round'>history</i>
+            <span class="placeholder">Practice Time</span>
+          </div>
+        </div>
+        <div>
+          <input type="text" class="RestTimeInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <img class='background-countdown' src="img/PracticeTime.png">
+            <span class="placeholder">Rest Time</span>
+          </div>
+        </div>
+        <div>
+          <input type="text" class="nbRepeatsInput" required pattern="\S+.*"/>
+          <div class="placeholder">
+            <span class="legend">x</span>
+            <span class="placeholder">Number of Repeats</span>
+          </div>
+        </div>
+        <button type="submit" name="button">Start</button>
+
+      </form>
+    </div>
+  </body>
+</html>
