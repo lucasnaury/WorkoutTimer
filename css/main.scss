@@ -223,10 +223,63 @@ $light: 300;
 
     circle{
       fill: none;
-      stroke-dasharray: calc(3.16 * 2 * 250);
-      stroke-dashoffset: calc(3.16 * 2 * 250);
+      stroke-dasharray: calc(3.14 * 2 * 250);
+      stroke-dashoffset: calc(3.14 * 2 * 250);
       transition: stroke-dashoffset 300ms;
     }
   }
 
+}
+@media (min-width : 1000px){
+  .choose{
+    h1{
+      top: 10% !important;
+    }
+    #form{
+      div {
+        margin-bottom: 75px;
+        input {
+          font-size: 26px;
+
+          & + div.placeholder,
+          & + div.placeholder
+          {
+            transform: translateY(-210%);
+            span,i{
+              font-size: 22px;
+            }
+            img{
+              width: 22px;
+            }
+          }
+        }
+      }
+      #submitBtn{
+        font-size: 22px;
+      }
+    }
+  }
+  .section{
+    .container{
+      top: 40% !important;
+      width: 25vw !important;
+      height: 25vw !important;
+      .countdown,
+      .restTimeToCountdown{
+        font-size: 90px !important;
+      }
+      .background{
+        img,i{
+          width: 17.5vw !important;
+          font-size: 17.5vw !important;
+        }
+      }
+    }
+    .parameters{
+      transform-origin: center left !important;
+      transform: translate(-150%, 50%) !important;
+      top: 70% !important;
+      left: 50% !important;
+    }
+  }
 }

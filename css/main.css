@@ -214,7 +214,54 @@ body .navInfo .navPoint:last-child::after {
 
 .svgContainer svg circle {
   fill: none;
-  stroke-dasharray: calc(3.16 * 2 * 250);
-  stroke-dashoffset: calc(3.16 * 2 * 250);
+  stroke-dasharray: calc(3.14 * 2 * 250);
+  stroke-dashoffset: calc(3.14 * 2 * 250);
   transition: stroke-dashoffset 300ms;
+}
+
+@media (min-width: 1000px) {
+  .choose h1 {
+    top: 10% !important;
+  }
+  .choose #form div {
+    margin-bottom: 75px;
+  }
+  .choose #form div input {
+    font-size: 26px;
+  }
+  .choose #form div input + div.placeholder,
+  .choose #form div input + div.placeholder {
+    transform: translateY(-210%);
+  }
+  .choose #form div input + div.placeholder span, .choose #form div input + div.placeholder i,
+  .choose #form div input + div.placeholder span,
+  .choose #form div input + div.placeholder i {
+    font-size: 22px;
+  }
+  .choose #form div input + div.placeholder img,
+  .choose #form div input + div.placeholder img {
+    width: 22px;
+  }
+  .choose #form #submitBtn {
+    font-size: 22px;
+  }
+  .section .container {
+    top: 40% !important;
+    width: 25vw !important;
+    height: 25vw !important;
+  }
+  .section .container .countdown,
+  .section .container .restTimeToCountdown {
+    font-size: 90px !important;
+  }
+  .section .container .background img, .section .container .background i {
+    width: 17.5vw !important;
+    font-size: 17.5vw !important;
+  }
+  .section .parameters {
+    transform-origin: center left !important;
+    transform: translate(-150%, 50%) !important;
+    top: 70% !important;
+    left: 50% !important;
+  }
 }
