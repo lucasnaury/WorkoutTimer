@@ -2,70 +2,219 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Ceci permet de définir le titre de la page  -->
-    <title>Page d'acceuil</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/choose.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-
-    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
-    <link href="/node_modules/pickerjs/dist/picker.css" rel="stylesheet">
-    <script src="/node_modules/pickerjs/dist/picker.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
   </head>
   <body>
-    <div class="choose">
-      <h1>Settings</h1>
-      <form id="form">
-        <div>
-          <input type="text" class="PracticeTimeInput" required pattern="\S+.*"/>
-          <div class="placeholder">
-            <i class='material-icons-round'>history</i>
-            <span class="placeholder">Practice Time</span>
-          </div>
+
+    <nav>
+      <h1><span>Lucas</span> NAURY</h1>
+      <div class="pages">
+        <a href=""><span>Accueil</span></a>
+        <a href="#portfolio"><span>Portfolio</span></a>
+        <a href="#about-me"><span>A propos</span></a>
+        <a href=""><span>Contact</span></a>
+      </div>
+      <div class="hamburgerToggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+
+    <section class="header-section">
+      <img class="scroll-down-indicator" src="img/down-arrow.gif" alt="">
+      <div class="title">
+        <h1>Full Stack</br>Developper</h1>
+        <h2>HTML • CSS • JS • Design</h2>
+      </div>
+    </section>
+
+    <section class="about_me-section">
+
+      <span id="about-me"></span>
+      <div class="header">
+        <div class="image">
+          <h1>About Me
+            <div class="ligne"></div>
+          </h1>
+          <h2>Lucas NAURY <em>-</em> <span>Etudiant</span></h2>
         </div>
-        <div>
-          <input type="text" class="RestTimeInput" required pattern="\S+.*"/>
-          <div class="placeholder">
-            <img class='background-countdown' src="img/PracticeTime.png">
-            <span class="placeholder">Rest Time</span>
-          </div>
-        </div>
-        <div>
-          <input type="text" class="nbRepeatsInput" required pattern="\S+.*"/>
-          <div class="placeholder">
-            <span class="legend">x</span>
-            <span class="placeholder">Number of Repeats</span>
-          </div>
-        </div>
-        <button id="submitBtn" type="reset" name="button">Start</button>
-      </form>
-    </div>
-      <div class='section'>
-            <div class='container'>
-              <div class='restTime'><i class='material-icons-round'>history</i><span>0:30</span></div>
-              <div class='countdown'><img src="img/PracticeTime.png"><span>1:00</span></div>
-              <div class='nbRepeats'>10</div>
-              <div class="background">
-                <i class='material-icons-round background-rest'>history</i>
-                <img class='background-countdown' src="img/PracticeTime.png">
-              </div>
-              <div class="svgContainer">
-                <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-                  <circle cx="250" cy="250" r="251" stroke="white" stroke-width="4px" stroke-linecap="round" stroke-dasharray="250px" stroke-dashoffset="0"/>
-                </svg>
+      </div>
+      <div class="content">
+        <p>
+          Actuellement en première année de cursus ingénieur à l'IMT Lille-Douai, je suis à la recherche d'un stage Connaissance de l'entreprise de
+          8 semaines du 15 février au 16 avril 2020.
+        </p>
+        <p>
+          Depuis toujours, je suis passioné par l'informatique. À l'aide de cours en ligne, j'ai appris différents langages (HTML, CSS, JS, PHP, C#)
+          afin de satisfaire ma curiosité. J'ai ainsi créer quelques projets personnels durant mon temps libre que vous pourrez consulter ci-dessous.
+
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <span id="portfolio"></span>
+      <div class="title">
+        <h1>Portfolio
+          <div class="ligne"></div>
+        </h1>
+      </div>
+
+      <div class="projects">
+        <div class="project">
+          <h1>Projet #1 - CONTROL</h1>
+          <h2>
+            Jeu PC développé pendant les vacances d'été 2020 à l'aide d'Unity 3D. Le principe est simple : vous controlez un personnage et vous devez atteindre
+            le portail pour passer au niveau suivant. Pour cela, vous pouvez prendre contrôle des différents personnages présents dans le
+            niveau simplement en leur "tirant" dessus. Chaque personnage ayant des capacités spéciales, le joueur doit établir une stratégie afin de
+            réussir le niveau.
+          </h2>
+          <div class="grid">
+            <div class="img large hover"> <!--Ratio 1.33333333333-->
+              <img src= "img/Project1/MainMenu.jpg" alt="Main Menu">
+              <div class="desc">
+                <h1>Ecran d'accueil</h1>
+                <h2>C'est la première chose que le joueur voit en lançant le jeu.</h2>
+                <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class='parameters'>
-              <span class='legend'>Practice Time</span>
-              <i class='material-icons-round playPauseBtn'>play_arrow</i>
-              <i class='material-icons-round editBtn'>edit</i>
+
+            <div class="img medium hover"> <!--Ratio 0.88396811337-->
+              <img src="img/Project1/Options.jpg" alt="Options">
+              <div class="desc">
+                <h1>Menu Options</h1>
+                <h2>À partir de ce menu, le joueur peut modifier ses contrôles, ses paramètres graphiques et le volume du jeu.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
             </div>
+            <div class="img medium hover"> <!--Ratio 1.79333333333-->
+              <img src="img/Project1/LevelSelect.jpg" alt="Level Select">
+              <div class="desc">
+                <h1>Sélecteur de niveaux</h1>
+                <h2>Seul le dernier niveau non joué est accessible au joueur.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+
+            <div class="img large hover">
+              <!--<video width="100%" height="100%" autoplay loop src="img/5.mp4">-->
+              <img src="img/Project1/Blobby.gif" alt="Blobby">
+              <div class="desc">
+                <h1>Blobby - Le personnage qui rebondit</h1>
+                <h2>Le joueur est amené à rencontrer ce personnage qui permet au joueur de rebondir et ainsi accéder à des zones innaccessibles auparavant.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+            <div class="img medium hover">
+              <img src="img/Project1/Tutorial.gif" alt="Tutorial">
+              <div class="desc">
+                <h1>Premier niveau du tutoriel</h1>
+                <h2>C'est le premier niveau que le joueur est amené à jouer. Il lui apprend les déplacements de base.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+            <div class="img medium hover">
+              <img src="img/Project1/Doubly.jpg" alt="Doubly">
+              <div class="desc">
+                <h1>Doubly - Le personnage aux multiples saut</h1>
+                <h2>C'est le premier personnage que le joueur rencontre. Il est capable de faire un double saut, et donc franchir des obstacles plus grands.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="seeMore"><a href="https://mega.nz/folder/w2QzBQRB#5Q7JnD5sLnz2xMKb0mm53A" target="_blank">Télécharger le jeu</a></div>
         </div>
+        <div class="project">
+          <h1>Projet #2 - Workout Timer</h1>
+          <h2>
+            Application qui permet de planifier sa séance de sport. L'utilisateur choisit le temps, le temps de repos et nombre de répétitions
+            pour un exercice. L'application se charge alors d'afficher les comptes à rebours afin que l'utilisateur puisse se concentrer totalement
+            sur sa séance de sport !
+          </h2>
+          <div class="grid">
+            <div class="img large hover"> <!--Ratio 1.33333333333-->
+              <img src= "img/Project2/Settings.jpg" alt="Settings">
+              <div class="desc">
+                <h1>Ecran d'accueil</h1>
+                <h2>C'est la première page que l'utilisateur voit en lançant l'application. Il peut y remplir les données de son exercice.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+
+            <div class="img medium hover"> <!--Ratio 0.88396811337-->
+              <img src="img/Project2/TimePicker.jpg" alt="Time Picker">
+              <div class="desc">
+                <h1>Time Picker</h1>
+                <h2>Utilisation d'une librairie JavaScript pour avoir un Time Picker.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+            <div class="img medium hover"> <!--Ratio 1.79333333333-->
+              <img src="img/Project2/SettingsCompleted.jpg" alt="Settings Completed">
+              <div class="desc">
+                <h1>Paramètres remplis</h1>
+                <h2>Une fois les paramètres remplis, l'utilisateur peut cliquer sur "START" afin de lancer l'application.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+
+            <div class="img large hover">
+              <img src="img/Project2/InUse.gif" alt="Application">
+              <div class="desc">
+                <h1>Application en marche</h1>
+                <h2>
+                  Lorsque le chronomètre est lancé, une animation affiche le temps qui s'écoule sous la forme d'un cercle.
+                  </br>L'application s'arrête lorsque l'exercice est totalement terminé.
+                </h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+            <div class="img medium hover">
+              <img src="img/Project2/PracticeTime.jpg" alt="Rest Time">
+              <div class="desc">
+                <h1>Practice Time</h1>
+                <h2>L'utilisateur réalise l'exercice durant le temps indiqué.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+            <div class="img medium hover">
+              <img src="img/Project2/RestTime.jpg" alt="Doubly">
+              <div class="desc">
+                <h1>Rest Time</h1>
+                <h2>L'utilisateur se repose durant le temps indiqué.</h2>
+                <span>Cliquer pour afficher en grand</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="seeMore"><a href="https://github.com/lucasnaury/WorkoutTimer" target="_blank">Voir sur Github</a></div>
+        </div>
+
+        <div class="overlay">
+          <img src="img/close.png" class="close">
+          <img src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
+          <img src="img/NavigateNext.png" alt=">" class="NavigateNext">
+          <div class="content">
+            <img src="" class="overlayImg">
+            <h1></h1>
+            <h2></h2>
+          </div>
+          <p>Appuyer sur <em>Echap</em> pour quitter</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
   </body>
 </html>
